@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6AD14226-6FB8-465A-8158-FE24CAA89725}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Achieva.My.MyApplication</StartupObject>
+    <RootNamespace>Achieva</RootNamespace>
+    <AssemblyName>Achieva</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Achieva.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Achieva.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Achieva_Demo_ApplicationDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Achieva_Demo_ApplicationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Achieva_MDI.Designer.vb">
+      <DependentUpon>Achieva_MDI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Achieva_MDI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Additional_Work_Form.Designer.vb">
+      <DependentUpon>Additional_Work_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Additional_Work_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Form.Designer.vb">
+      <DependentUpon>Admin_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COH_Form.Designer.vb">
+      <DependentUpon>COH_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="COH_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Daily_Attaindance_Form.Designer.vb">
+      <DependentUpon>Daily_Attaindance_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Daily_Attaindance_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete_Staff_Induction_Form.Designer.vb">
+      <DependentUpon>Delete_Staff_Induction_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_Staff_Induction_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monthly_Attendence_Report_Form.Designer.vb">
+      <DependentUpon>Monthly_Attendence_Report_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Monthly_Attendence_Report_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employ_1.Designer.vb">
+      <DependentUpon>Employ_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employ_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employ_2.Designer.vb">
+      <DependentUpon>Employ_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employ_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employ_3.Designer.vb">
+      <DependentUpon>Employ_3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employ_3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Work_Book_Form.Designer.vb">
+      <DependentUpon>Work_Book_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Work_Book_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Form.Designer.vb">
+      <DependentUpon>Login_Form.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager_Form.Designer.vb">
+      <DependentUpon>Manager_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="New_Staff_Induction_Form.Designer.vb">
+      <DependentUpon>New_Staff_Induction_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New_Staff_Induction_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_Report_Form.Designer.vb">
+      <DependentUpon>Progress_Report_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_Report_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Show_All_Staff_Induction_Form.Designer.vb">
+      <DependentUpon>Show_All_Staff_Induction_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Show_All_Staff_Induction_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_Staff_Induction_Form.Designer.vb">
+      <DependentUpon>Update_Staff_Induction_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Update_Staff_Induction_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_Registration.Designer.vb">
+      <DependentUpon>User_Registration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User_Registration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Work_Book_Report_Form.Designer.vb">
+      <DependentUpon>Work_Book_Report_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Work_Book_Report_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Achieva_MDI.resx">
+      <DependentUpon>Achieva_MDI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Additional_Work_Form.resx">
+      <DependentUpon>Additional_Work_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Form.resx">
+      <DependentUpon>Admin_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COH_Form.resx">
+      <DependentUpon>COH_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Daily_Attaindance_Form.resx">
+      <DependentUpon>Daily_Attaindance_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete_Staff_Induction_Form.resx">
+      <DependentUpon>Delete_Staff_Induction_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monthly_Attendence_Report_Form.resx">
+      <DependentUpon>Monthly_Attendence_Report_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employ_1.resx">
+      <DependentUpon>Employ_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employ_2.resx">
+      <DependentUpon>Employ_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employ_3.resx">
+      <DependentUpon>Employ_3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Work_Book_Form.resx">
+      <DependentUpon>Work_Book_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Form.resx">
+      <DependentUpon>Login_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager_Form.resx">
+      <DependentUpon>Manager_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New_Staff_Induction_Form.resx">
+      <DependentUpon>New_Staff_Induction_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Show_All_Staff_Induction_Form.resx">
+      <DependentUpon>Show_All_Staff_Induction_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_Staff_Induction_Form.resx">
+      <DependentUpon>Update_Staff_Induction_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Registration.resx">
+      <DependentUpon>User_Registration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Work_Book_Report_Form.resx">
+      <DependentUpon>Work_Book_Report_Form.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Achieva_Demo_ApplicationDataSet.xsc">
+      <DependentUpon>Achieva_Demo_ApplicationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Achieva_Demo_ApplicationDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Achieva_Demo_ApplicationDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Achieva_Demo_ApplicationDataSet.xss">
+      <DependentUpon>Achieva_Demo_ApplicationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="App.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
